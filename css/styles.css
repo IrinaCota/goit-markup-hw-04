@@ -30,7 +30,9 @@ img {
 /* Header */
 .header {
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 .header-container {
   display: flex;
@@ -80,8 +82,8 @@ img {
   display: block;
   padding: 24px 0 24px;
   transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link.active {
   color: #404bbf;
@@ -145,11 +147,11 @@ img {
       var(--GREY, rgba(46, 47, 66, 0.7))
     ),
     url(../images/people-office.jpg);
-    max-width: 1440px;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-title {
@@ -343,23 +345,22 @@ img {
   flex-shrink: 0;
   background-color: #fff;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-}
-.overlay-relative {
-  position: relative;
-  overflow: hidden; 
-}
-.overlay-relative:hover {
-  transform: translateY(0); 
 }
 .portfolio:hover {
   border: 1px solid #f4f4fd;
   background-color: #fff;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08); 
-}  
- 
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.portfolio:hover .overlay-text {
+  transform: translateY(0%);
+}
+.overlay-relative {
+  position: relative;
+  overflow: hidden;
+}
+
 .overlay-text {
   position: absolute;
   background-color: #4d5ae5;
@@ -409,15 +410,15 @@ img {
   margin-bottom: 16px;
 }
 .text-footer {
-  color: #F4F4FD;
+  color: #f4f4fd;
   width: 264px;
   font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 .footer-text {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
